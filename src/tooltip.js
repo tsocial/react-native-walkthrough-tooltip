@@ -544,7 +544,7 @@ class Tooltip extends Component {
 
     const extendedStyles = this._getExtendedStyles();
     const contentStyle = [styles.content, ...extendedStyles.content];
-    const arrowColor = StyleSheet.flatten(contentStyle).backgroundColor;
+    const arrowColor = StyleSheet.flatten(contentStyle).arrowColor;
     const arrowColorStyle = this.getArrowColorStyle(arrowColor);
     const arrowDynamicStyle = this.getArrowDynamicStyle();
     const contentSizeAvailable = this.state.contentSize.width;
